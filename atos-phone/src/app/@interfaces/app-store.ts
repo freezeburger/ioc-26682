@@ -1,7 +1,8 @@
 import { BehaviorSubject } from 'rxjs';
+import { Actions } from '../@enums/actions.enum';
 
 export interface AppStoreAction {
-    type:string;
+    type:Actions;
     data?:any;
 }  
 
