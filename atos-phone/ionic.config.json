@@ -1,0 +1,7 @@
+{
+  "name": "atos-phone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
