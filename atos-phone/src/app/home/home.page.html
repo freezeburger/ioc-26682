@@ -9,6 +9,12 @@
     User {{credentials | json}}
   </code> -->
 
+  <ion-card>
+    <ion-card-content>
+      {{store.data$ | async |  json }}
+    </ion-card-content>
+  </ion-card>
+
   <ion-list lines="full" class="ion-no-padding" inset="true">
     <form #login="ngForm">
       <ion-item>

@@ -7,7 +7,7 @@ import { Actions } from '../@enums/actions.enum';
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
-  // changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomePage implements OnInit, OnChanges, DoCheck, OnDestroy {
 
@@ -25,6 +25,10 @@ export class HomePage implements OnInit, OnChanges, DoCheck, OnDestroy {
   ) {
     console.log(this.store)
     setInterval(() => this.time = Date.now(), 1000)
+
+    this.store.data$.subscribe(
+      ()=> this.toggleLoading(false)
+    )
   }
 
   // One time : Only attributes are changed from the outside
