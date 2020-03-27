@@ -182,7 +182,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/app.component.ts:46</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/app.component.ts:57</a></div>
                             </td>
                         </tr>
 
@@ -286,8 +286,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="57"
-                            class="link-to-prism">src/app/app.component.ts:57</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/app.component.ts:68</a></div>
                 </td>
             </tr>
 
@@ -325,8 +325,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="64"
-                            class="link-to-prism">src/app/app.component.ts:64</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/app.component.ts:75</a></div>
                 </td>
             </tr>
 
@@ -371,11 +371,21 @@
                         <td class="col-md-4">
                             <i>Default value : </i><code>[
     {
-      title: &#x27;Inbox&#x27;,
+      title: &#x27;Home&#x27;,
       url: &#x27;/folder/Inbox&#x27;,
       icon: &#x27;mail&#x27;
     },
     {
+      title: &#x27;Search&#x27;,
+      url: &#x27;/folder/Search&#x27;,
+      icon: &#x27;mail&#x27;
+    },
+    {
+      title: &#x27;Settings&#x27;,
+      url: &#x27;/folder/Settings&#x27;,
+      icon: &#x27;mail&#x27;
+    },
+    /* {
       title: &#x27;Outbox&#x27;,
       url: &#x27;/folder/Outbox&#x27;,
       icon: &#x27;paper-plane&#x27;
@@ -399,13 +409,13 @@
       title: &#x27;Spam&#x27;,
       url: &#x27;/folder/Spam&#x27;,
       icon: &#x27;warning&#x27;
-    }
+    } */
   ]</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/app.component.ts:14</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/app.component.ts:15</a></div>
                             </td>
                         </tr>
 
@@ -438,7 +448,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/app.component.ts:46</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/app.component.ts:57</a></div>
                             </td>
                         </tr>
 
@@ -471,7 +481,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/app.component.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/app.component.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -484,7 +494,7 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Inject, Optional } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Inject, Optional, ChangeDetectionStrategy } from &#x27;@angular/core&#x27;;
 
 import { Platform } from &#x27;@ionic/angular&#x27;;
 import { SplashScreen } from &#x27;@ionic-native/splash-screen/ngx&#x27;;
@@ -493,17 +503,28 @@ import { StatusBar } from &#x27;@ionic-native/status-bar/ngx&#x27;;
 @Component({
   selector: &#x27;app-root&#x27;,
   templateUrl: &#x27;app.component.html&#x27;,
-  styleUrls: [&#x27;app.component.scss&#x27;]
+  styleUrls: [&#x27;app.component.scss&#x27;],
+ // changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements OnInit {
   public selectedIndex &#x3D; 0;
   public appPages &#x3D; [
     {
-      title: &#x27;Inbox&#x27;,
+      title: &#x27;Home&#x27;,
       url: &#x27;/folder/Inbox&#x27;,
       icon: &#x27;mail&#x27;
     },
     {
+      title: &#x27;Search&#x27;,
+      url: &#x27;/folder/Search&#x27;,
+      icon: &#x27;mail&#x27;
+    },
+    {
+      title: &#x27;Settings&#x27;,
+      url: &#x27;/folder/Settings&#x27;,
+      icon: &#x27;mail&#x27;
+    },
+    /* {
       title: &#x27;Outbox&#x27;,
       url: &#x27;/folder/Outbox&#x27;,
       icon: &#x27;paper-plane&#x27;
@@ -527,7 +548,7 @@ export class AppComponent implements OnInit {
       title: &#x27;Spam&#x27;,
       url: &#x27;/folder/Spam&#x27;,
       icon: &#x27;warning&#x27;
-    }
+    } */
   ];
   public labels &#x3D; [&#x27;Family&#x27;, &#x27;Friends&#x27;, &#x27;Notes&#x27;, &#x27;Work&#x27;, &#x27;Travel&#x27;, &#x27;Reminders&#x27;];
 
@@ -577,7 +598,8 @@ export class AppComponent implements OnInit {
 
           &lt;ion-menu-toggle auto-hide&#x3D;&quot;false&quot; *ngFor&#x3D;&quot;let p of appPages; let i &#x3D; index&quot;&gt;
             &lt;ion-item (click)&#x3D;&quot;selectedIndex &#x3D; i&quot; routerDirection&#x3D;&quot;root&quot; [routerLink]&#x3D;&quot;[p.url]&quot; lines&#x3D;&quot;none&quot; detail&#x3D;&quot;false&quot; [class.selected]&#x3D;&quot;selectedIndex &#x3D;&#x3D; i&quot;&gt;
-              &lt;ion-icon slot&#x3D;&quot;start&quot; [ios]&#x3D;&quot;p.icon + &#x27;-outline&#x27; &quot; [md]&#x3D;&quot;p.icon + &#x27;-sharp&#x27;&quot;&gt;&lt;/ion-icon&gt;
+              
+              &lt;!-- &lt;ion-icon slot&#x3D;&quot;start&quot; [ios]&#x3D;&quot;p.icon + &#x27;-outline&#x27; &quot; [md]&#x3D;&quot;p.icon + &#x27;-sharp&#x27;&quot;&gt;&lt;/ion-icon&gt; --&gt;
               &lt;ion-label&gt;{{ p.title }}&lt;/ion-label&gt;
             &lt;/ion-item&gt;
           &lt;/ion-menu-toggle&gt;
@@ -749,8 +771,8 @@ ion-item.selected {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-app>  <!--     Event (click)="selectedIndex = i"    Binding Text {{ p.title }}    Binding Data [ios]="p.icon + \'-outline\'"    Enrichissement       *ngFor      ngClass   -->  <ion-split-pane contentId="main-content">    <ion-menu contentId="main-content" type="overlay">      <ion-content>        <ion-list id="inbox-list">          <ion-list-header>Inbox</ion-list-header>          <ion-note>hi@ionicframework.com</ion-note>          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">            <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">              <ion-icon slot="start" [ios]="p.icon + \'-outline\' " [md]="p.icon + \'-sharp\'"></ion-icon>              <ion-label>{{ p.title }}</ion-label>            </ion-item>          </ion-menu-toggle>        </ion-list>        <ion-list id="labels-list">          <ion-list-header>Labels</ion-list-header>          <ion-item *ngFor="let label of labels" lines="none">            <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>            <ion-label>{{ label }}</ion-label>          </ion-item>        </ion-list>      </ion-content>    </ion-menu>    <ion-router-outlet id="main-content"></ion-router-outlet>  </ion-split-pane></ion-app></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FolderPage', 'selector': 'app-folder'}];
+        var COMPONENT_TEMPLATE = '<div><ion-app>  <!--     Event (click)="selectedIndex = i"    Binding Text {{ p.title }}    Binding Data [ios]="p.icon + \'-outline\'"    Enrichissement       *ngFor      ngClass   -->  <ion-split-pane contentId="main-content">    <ion-menu contentId="main-content" type="overlay">      <ion-content>        <ion-list id="inbox-list">          <ion-list-header>Inbox</ion-list-header>          <ion-note>hi@ionicframework.com</ion-note>          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">            <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">                            <!-- <ion-icon slot="start" [ios]="p.icon + \'-outline\' " [md]="p.icon + \'-sharp\'"></ion-icon> -->              <ion-label>{{ p.title }}</ion-label>            </ion-item>          </ion-menu-toggle>        </ion-list>        <ion-list id="labels-list">          <ion-list-header>Labels</ion-list-header>          <ion-item *ngFor="let label of labels" lines="none">            <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>            <ion-label>{{ label }}</ion-label>          </ion-item>        </ion-list>      </ion-content>    </ion-menu>    <ion-router-outlet id="main-content"></ion-router-outlet>  </ion-split-pane></ion-app></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FolderPage', 'selector': 'app-folder'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'SearchPage', 'selector': 'app-search'},{'name': 'SettingsPage', 'selector': 'app-settings'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>

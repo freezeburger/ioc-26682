@@ -7,3 +7,5 @@ Assets
 Uniformisation  CSS Device
 
 get set loading
+
+Comment faire redescendre l'action du store

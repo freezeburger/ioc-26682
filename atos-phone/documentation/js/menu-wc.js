@@ -88,8 +88,109 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             <li class="link">
                                 <a href="modules/FolderPageRoutingModule.html" data-type="entity-link">FolderPageRoutingModule</a>
                             </li>
+                            <li class="link">
+                                <a href="modules/HomePageModule.html" data-type="entity-link">HomePageModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-HomePageModule-5d521c8f9c231def9683955e0b56b067"' : 'data-target="#xs-components-links-module-HomePageModule-5d521c8f9c231def9683955e0b56b067"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-HomePageModule-5d521c8f9c231def9683955e0b56b067"' :
+                                            'id="xs-components-links-module-HomePageModule-5d521c8f9c231def9683955e0b56b067"' }>
+                                            <li class="link">
+                                                <a href="components/HomePage.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">HomePage</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/HomePageRoutingModule.html" data-type="entity-link">HomePageRoutingModule</a>
+                            </li>
+                            <li class="link">
+                                <a href="modules/SearchPageModule.html" data-type="entity-link">SearchPageModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-SearchPageModule-3c5ece545883d63ed9983466b9a7ba02"' : 'data-target="#xs-components-links-module-SearchPageModule-3c5ece545883d63ed9983466b9a7ba02"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-SearchPageModule-3c5ece545883d63ed9983466b9a7ba02"' :
+                                            'id="xs-components-links-module-SearchPageModule-3c5ece545883d63ed9983466b9a7ba02"' }>
+                                            <li class="link">
+                                                <a href="components/SearchPage.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">SearchPage</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/SearchPageRoutingModule.html" data-type="entity-link">SearchPageRoutingModule</a>
+                            </li>
+                            <li class="link">
+                                <a href="modules/SettingsPageModule.html" data-type="entity-link">SettingsPageModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-SettingsPageModule-256594e15c2d912c24af9bf957f49e7a"' : 'data-target="#xs-components-links-module-SettingsPageModule-256594e15c2d912c24af9bf957f49e7a"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-SettingsPageModule-256594e15c2d912c24af9bf957f49e7a"' :
+                                            'id="xs-components-links-module-SettingsPageModule-256594e15c2d912c24af9bf957f49e7a"' }>
+                                            <li class="link">
+                                                <a href="components/SettingsPage.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">SettingsPage</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/SettingsPageRoutingModule.html" data-type="entity-link">SettingsPageRoutingModule</a>
+                            </li>
                 </ul>
                 </li>
+                        <li class="chapter">
+                            <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#injectables-links"' :
+                                'data-target="#xs-injectables-links"' }>
+                                <span class="icon ion-md-arrow-round-down"></span>
+                                <span>Injectables</span>
+                                <span class="icon ion-ios-arrow-down"></span>
+                            </div>
+                            <ul class="links collapse " ${ isNormalMode ? 'id="injectables-links"' : 'id="xs-injectables-links"' }>
+                                <li class="link">
+                                    <a href="injectables/StoreService.html" data-type="entity-link">StoreService</a>
+                                </li>
+                            </ul>
+                        </li>
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#interfaces-links"' :
+                            'data-target="#xs-interfaces-links"' }>
+                            <span class="icon ion-md-information-circle-outline"></span>
+                            <span>Interfaces</span>
+                            <span class="icon ion-ios-arrow-down"></span>
+                        </div>
+                        <ul class="links collapse " ${ isNormalMode ? ' id="interfaces-links"' : 'id="xs-interfaces-links"' }>
+                            <li class="link">
+                                <a href="interfaces/AppSearch.html" data-type="entity-link">AppSearch</a>
+                            </li>
+                            <li class="link">
+                                <a href="interfaces/AppSearchServerResult.html" data-type="entity-link">AppSearchServerResult</a>
+                            </li>
+                            <li class="link">
+                                <a href="interfaces/AppStore.html" data-type="entity-link">AppStore</a>
+                            </li>
+                            <li class="link">
+                                <a href="interfaces/AppStoreAction.html" data-type="entity-link">AppStoreAction</a>
+                            </li>
+                            <li class="link">
+                                <a href="interfaces/AppUser.html" data-type="entity-link">AppUser</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#miscellaneous-links"'
                             : 'data-target="#xs-miscellaneous-links"' }>
@@ -98,6 +199,9 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             <span class="icon ion-ios-arrow-down"></span>
                         </div>
                         <ul class="links collapse " ${ isNormalMode ? 'id="miscellaneous-links"' : 'id="xs-miscellaneous-links"' }>
+                            <li class="link">
+                                <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
+                            </li>
                             <li class="link">
                                 <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
                             </li>
